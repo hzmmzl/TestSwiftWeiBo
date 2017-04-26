@@ -31,7 +31,7 @@ class MainTabBarViewController: UITabBarController {
         childVC.tabBarItem.image = UIImage(imageLiteralResourceName: imageName)
         childVC.tabBarItem.selectedImage = UIImage(imageLiteralResourceName: imageName + "_highlighted")
         
-        childVC.tabBarItem.title = title
+        childVC.title = title
         self.addChildViewController(nav)
         
     }
