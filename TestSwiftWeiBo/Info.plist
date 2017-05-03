@@ -20,6 +20,27 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeShuffle</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>分享记账</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>0</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeLove</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>记一笔</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>快捷记账</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>1</string>
+		</dict>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

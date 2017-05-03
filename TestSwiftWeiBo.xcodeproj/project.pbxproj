@@ -21,7 +21,12 @@
 		910D10FA1EA9FC0200F0C1D2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910D10F91EA9FC0200F0C1D2 /* ProfileViewController.swift */; };
 		910D10FC1EA9FC1300F0C1D2 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910D10FB1EA9FC1300F0C1D2 /* DiscoverViewController.swift */; };
 		910D10FE1EA9FC2200F0C1D2 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910D10FD1EA9FC2200F0C1D2 /* MessageViewController.swift */; };
+		912542FA1EB1DAA40081D9F4 /* UserAccountInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912542F91EB1DAA40081D9F4 /* UserAccountInfo.swift */; };
 		914E71E21EB0A0210006E53B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 914E71E11EB0A0210006E53B /* Assets.xcassets */; };
+		915080751EB19606001B91AE /* OauthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915080741EB19606001B91AE /* OauthViewController.swift */; };
+		9150807B1EB19B3E001B91AE /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9150807A1EB19B3E001B91AE /* VisitorView.swift */; };
+		9150807D1EB19B90001B91AE /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9150807C1EB19B90001B91AE /* VisitorView.xib */; };
+		91F009231EB0B0BD00FF18DE /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F009221EB0B0BD00FF18DE /* BaseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +68,13 @@
 		910D10F91EA9FC0200F0C1D2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		910D10FB1EA9FC1300F0C1D2 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		910D10FD1EA9FC2200F0C1D2 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		912542F91EB1DAA40081D9F4 /* UserAccountInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountInfo.swift; sourceTree = "<group>"; };
 		914E71E11EB0A0210006E53B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		915080741EB19606001B91AE /* OauthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OauthViewController.swift; sourceTree = "<group>"; };
+		9150807A1EB19B3E001B91AE /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		9150807C1EB19B90001B91AE /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 		91F0091D1EB0AEE900FF18DE /* TestSwiftWeiBo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSwiftWeiBo-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		91F009221EB0B0BD00FF18DE /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		A80D24061C248E836C26B24F /* Pods-TestSwiftWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSwiftWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestSwiftWeiBo/Pods-TestSwiftWeiBo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,14 +137,15 @@
 		910D10B91EA9F89400F0C1D2 /* TestSwiftWeiBo */ = {
 			isa = PBXGroup;
 			children = (
+				915080791EB19AE6001B91AE /* begin */,
+				915080731EB195ED001B91AE /* Oauth */,
+				91F009211EB0B05900FF18DE /* Base */,
 				910D10EA1EA9F9D400F0C1D2 /* Main */,
 				910D10EE1EA9FAC500F0C1D2 /* HomeViewController */,
 				910D10F11EA9FAF100F0C1D2 /* ProfileViewController */,
 				910D10F01EA9FAEE00F0C1D2 /* DiscoverViewController */,
 				910D10EF1EA9FAEA00F0C1D2 /* MessageViewController */,
 				910D10F21EA9FB1A00F0C1D2 /* Other */,
-				910D10BE1EA9F89400F0C1D2 /* Main.storyboard */,
-				910D10C31EA9F89400F0C1D2 /* LaunchScreen.storyboard */,
 				914E71E11EB0A0210006E53B /* Assets.xcassets */,
 				910D10C61EA9F89400F0C1D2 /* Info.plist */,
 			);
@@ -164,7 +175,6 @@
 			children = (
 				910D10EB1EA9FA7800F0C1D2 /* MainTabBarViewController.swift */,
 				910D10F51EA9FB9200F0C1D2 /* MainNavController.swift */,
-				910D10F71EA9FBD900F0C1D2 /* BaseViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -172,7 +182,9 @@
 		910D10EE1EA9FAC500F0C1D2 /* HomeViewController */ = {
 			isa = PBXGroup;
 			children = (
-				910D10F31EA9FB4C00F0C1D2 /* HomeViewController.swift */,
+				915080781EB19AC3001B91AE /* controller */,
+				915080771EB19ABB001B91AE /* model */,
+				915080761EB19AAA001B91AE /* view */,
 			);
 			name = HomeViewController;
 			sourceTree = "<group>";
@@ -207,8 +219,67 @@
 				910D10BA1EA9F89400F0C1D2 /* AppDelegate.swift */,
 				910D10BC1EA9F89400F0C1D2 /* ViewController.swift */,
 				91F0091D1EB0AEE900FF18DE /* TestSwiftWeiBo-Bridging-Header.h */,
+				910D10BE1EA9F89400F0C1D2 /* Main.storyboard */,
+				910D10C31EA9F89400F0C1D2 /* LaunchScreen.storyboard */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		912542F81EB1DA340081D9F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				912542F91EB1DAA40081D9F4 /* UserAccountInfo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		915080731EB195ED001B91AE /* Oauth */ = {
+			isa = PBXGroup;
+			children = (
+				912542F81EB1DA340081D9F4 /* Model */,
+				915080741EB19606001B91AE /* OauthViewController.swift */,
+			);
+			name = Oauth;
+			sourceTree = "<group>";
+		};
+		915080761EB19AAA001B91AE /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		915080771EB19ABB001B91AE /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		915080781EB19AC3001B91AE /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				910D10F31EA9FB4C00F0C1D2 /* HomeViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		915080791EB19AE6001B91AE /* begin */ = {
+			isa = PBXGroup;
+			children = (
+				9150807A1EB19B3E001B91AE /* VisitorView.swift */,
+				9150807C1EB19B90001B91AE /* VisitorView.xib */,
+			);
+			name = begin;
+			sourceTree = "<group>";
+		};
+		91F009211EB0B05900FF18DE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				910D10F71EA9FBD900F0C1D2 /* BaseViewController.swift */,
+				91F009221EB0B0BD00FF18DE /* BaseTableViewController.swift */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		DE4383EF489C692196DE8243 /* Pods */ = {
@@ -291,8 +362,9 @@
 				TargetAttributes = {
 					910D10B61EA9F89400F0C1D2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 747363KXQ6;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					910D10CA1EA9F89400F0C1D2 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -334,6 +406,7 @@
 				910D10C51EA9F89400F0C1D2 /* LaunchScreen.storyboard in Resources */,
 				914E71E21EB0A0210006E53B /* Assets.xcassets in Resources */,
 				910D10C01EA9F89400F0C1D2 /* Main.storyboard in Resources */,
+				9150807D1EB19B90001B91AE /* VisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +479,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				915080751EB19606001B91AE /* OauthViewController.swift in Sources */,
 				910D10F61EA9FB9200F0C1D2 /* MainNavController.swift in Sources */,
 				910D10FE1EA9FC2200F0C1D2 /* MessageViewController.swift in Sources */,
+				912542FA1EB1DAA40081D9F4 /* UserAccountInfo.swift in Sources */,
+				9150807B1EB19B3E001B91AE /* VisitorView.swift in Sources */,
+				91F009231EB0B0BD00FF18DE /* BaseTableViewController.swift in Sources */,
 				910D10EC1EA9FA7800F0C1D2 /* MainTabBarViewController.swift in Sources */,
 				910D10BD1EA9F89400F0C1D2 /* ViewController.swift in Sources */,
 				910D10BB1EA9F89400F0C1D2 /* AppDelegate.swift in Sources */,
@@ -568,10 +645,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 747363KXQ6;
 				INFOPLIST_FILE = TestSwiftWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gs.TestSwiftWeiBo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.9188.jizhang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a513cfcc-4bc3-40b7-aae4-41505c080a70";
+				PROVISIONING_PROFILE_SPECIFIER = JiZhangEnterpriseDevelopment;
 				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftWeiBo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -584,9 +665,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestSwiftWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gs.TestSwiftWeiBo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.9188.jizhang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestSwiftWeiBo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

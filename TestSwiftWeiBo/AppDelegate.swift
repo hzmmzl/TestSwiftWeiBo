@@ -25,6 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    func switchRootViewController() {
+        
+    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -47,6 +51,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+  /* 测试3d touch
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        var actionString:String?
+        switch shortcutItem.localizedTitle {
+        case "分享记账":
+            actionString = "调用分享"
+            break
+            
+        default:
+            actionString = "进入快速记一笔"
+            break
+        }
+        let alertController = UIAlertController(title: "温馨提示" , message: actionString!, preferredStyle: .alert);
+        alertController.addAction(UIAlertAction(title: "取消", style: .cancel, handler: nil))
+        let okAction = UIAlertAction(title: "确定", style: .default) { (action) in
+            print("进入记一笔页面")
+        }
+        alertController.addAction(okAction)
+//        alertController.show(<#T##vc: UIViewController##UIViewController#>, sender: <#T##Any?#>)
+        self.window?.rootViewController?.present(alertController, animated: true, completion: nil)
+    }
+ */
 
 
 }
